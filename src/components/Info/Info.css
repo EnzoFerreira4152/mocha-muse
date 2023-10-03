@@ -1,0 +1,111 @@
+.infoContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 85vh;
+}
+
+.image{
+  background-image: url('../../../img/background-side.jpg');
+  background-size: cover;
+  width: 40%;
+  height: 85vh;
+  opacity: .9;
+}
+
+.cajaInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+  height: 100%;
+  padding-right: 1.5rem;
+}
+
+.cajaInfo > h3{
+  border: 1px solid green;
+  padding: .2rem;
+  background-color: rgba(50, 200, 100, .25);
+  margin: 1rem 0px;
+}
+
+.historia{
+  margin-bottom: 4vh;
+}
+
+.quote{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: .5rem 1rem;
+  background-color: rgb(240, 240, 240);
+  border-left: 6px solid #ccc!important
+}
+
+.ceo{
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+
+@media(max-width: 768px){
+  .cajaInfo{
+    display: block;
+    overflow: scroll;
+  }
+}
+
+@media(max-width: 600px){
+  .image{
+    width: 100vw;
+  }
+
+  .cajaInfo{
+    display: block;
+    position: absolute;
+    width: 90vw;
+    height: 85vh;
+    padding-right: 0;
+  }
+
+  .cajaInfo > h3{
+    padding: .2rem;
+    background-color: rgb(50, 200, 100);
+    margin: 1rem 0px;
+  }
+
+  .historia{
+    backdrop-filter: blur(10px);
+    margin-bottom: 8vh;
+  }
+
+  .historia > p{
+    padding: 12px;
+    background-color: wheat;
+    color: black;
+  }
+}
+
+@media(max-width: 400px){
+  .cajaInfo{
+    font-size: .85rem;
+  }
+}
+
+@media(max-width: 375px){
+  .cajaInfo{
+    font-size: .85rem;
+  }
+}
+
+@media(max-width: 280px){
+  .cajaInfo{
+    overflow: scroll;
+  }
+}
+
+
+

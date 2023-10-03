@@ -1,0 +1,51 @@
+.stockContainer{
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0px 10vh;
+}
+
+.tituloSeccion{
+  display: flex;
+  justify-content: center;
+  width: 20rem;
+  margin-bottom: 30px;
+  padding: 10px;
+  border: .5px solid gray;
+  box-shadow: -3px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.tituloItem{
+  font-weight: 500;
+}
+
+.accionesContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media(max-width: 750px){
+  .tituloItem{
+    font-size: 1rem;
+  }
+}
+
+@media(max-width: 600px){
+  .descripcionItem .desc{
+    font-size: 12px
+  }
+
+  .descripcionItem{
+    font-size: .8rem;
+  }
+}
+
+@media(max-width: 450px){
+  
+}

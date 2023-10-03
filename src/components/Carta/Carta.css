@@ -1,0 +1,191 @@
+.mainContainerCarta{
+  background-image: url('../../../img/carta-cafe.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+}
+
+.titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 5rem;
+  background-color: rgba(0, 0, 0, .4);
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.titulo > h2{
+  padding: .5rem 2rem;
+  backdrop-filter: blur(20px);
+  color: white;
+}
+
+.cartaCaja{
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  height: 60vh;
+  padding: 1rem;
+  background-color:rgb(70, 210, 125);
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow: scroll;
+}
+
+.tituloSeccionCarta{
+  min-width: 6rem;
+  padding: .5rem;
+  margin: 1rem;
+  font-size: 1.2rem;
+  background-color: black;
+  color: white;
+  align-self: center;
+  text-align: center;
+}
+
+.menuElem{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.infoElem{
+  display: flex;
+  margin-left: 2rem;
+}
+
+.infoDescripcion{
+  margin-right: 1rem;
+}
+
+.descripcionElem{
+  font-size: 14px;
+}
+
+.tituloElem{
+  font-weight: bold;
+}
+
+.tituloElem > span{
+  font-style: italic;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.botoneraElem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 30%;
+}
+
+.botoneraElem .botonAccion{
+  margin: .5rem;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  appearance: none;
+  border-radius: 4px;
+  border: solid .5px black;
+  background-color: transparent;
+}
+
+.botoneraElem .cantidad{
+  font-size: .9rem;
+}
+
+.accionesContainerCarta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem
+}
+
+.botonCompraCarta{
+  background-color: black!important;
+}
+
+.hidden{
+  display: none;
+}
+
+.visible{
+  display: block;
+}
+
+.modalCompra{
+  width: 20rem;
+  height: 15rem;
+  background-color: rgba(0, 0, 0, .9);
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+  position: absolute;
+  top: calc(50% - 7.5rem)
+}
+
+
+@media(max-width: 600px){
+  .infoElem{
+    margin-left: 1rem;
+    font-size: .8rem;
+  }
+
+  .botoneraElem .botonAccion{
+    height: 25px;
+    width: 25px;
+  }
+
+  .botoneraElem{
+    min-width: 35%;
+  }
+}
+
+@media(max-width: 500px){
+  .menuElem{
+    flex-direction: column;
+    border: .5px dashed black;
+    margin-bottom: 5px;
+    width: 14rem;
+    padding: .5rem;
+  }
+
+  .tituloSeccionCarta{
+    font-size: 1rem;
+  }
+
+  .menu{
+    align-items: center;
+  }
+
+  .infoDescripcion .tituloElem{
+    text-align: center;
+  }
+
+  .infoDescripcion .descripcionElem{
+    text-align: center;
+    font-size: .7rem;
+  }
+
+  .botoneraElem{
+    height: 2rem;
+  }
+}
